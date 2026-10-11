@@ -1,0 +1,202 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "marquee-matchups-27-36",
+  "title": "Marquee Matchups",
+  "reward": "Jumbo Gold Pack",
+  "sourceUrl": "https://www.futwiz.com/sbcs/marquee-matchups/36",
+  "expiresAt": "2026-10-16T21:00:00.000Z",
+  "children": [
+    {
+      "id": "rb-leipzig-frankfurt",
+      "title": "RB Leipzig v Eintracht Frankfurt",
+      "formation": "3-5-2",
+      "reward": "Small Gold Pack",
+      "rules": [
+        {
+          "type": "from",
+          "op": "min",
+          "value": 1,
+          "field": "club",
+          "values": [
+            "RB Leipzig",
+            "Frankfurt",
+            "Eintracht Frankfurt"
+          ]
+        },
+        {
+          "type": "distinct",
+          "op": "min",
+          "value": 4,
+          "field": "club"
+        },
+        {
+          "type": "quality_count",
+          "op": "min",
+          "value": 1,
+          "quality": "Silver"
+        },
+        {
+          "type": "quality_floor",
+          "op": "min",
+          "value": 1,
+          "quality": "Bronze"
+        },
+        {
+          "type": "chemistry",
+          "op": "min",
+          "value": 14
+        }
+      ]
+    },
+    {
+      "id": "como-roma",
+      "title": "Como 1907 v AS Roma",
+      "formation": "4-5-1",
+      "reward": "Small Electrum Players Pack",
+      "rules": [
+        {
+          "type": "from",
+          "op": "min",
+          "value": 1,
+          "field": "club",
+          "values": [
+            "Como",
+            "Como 1907",
+            "AS Roma"
+          ]
+        },
+        {
+          "type": "from",
+          "op": "min",
+          "value": 2,
+          "field": "nation",
+          "values": [
+            "Italy"
+          ]
+        },
+        {
+          "type": "distinct",
+          "op": "max",
+          "value": 4,
+          "field": "league"
+        },
+        {
+          "type": "quality_count",
+          "op": "min",
+          "value": 1,
+          "quality": "Gold"
+        },
+        {
+          "type": "quality_floor",
+          "op": "min",
+          "value": 1,
+          "quality": "Silver"
+        },
+        {
+          "type": "chemistry",
+          "op": "min",
+          "value": 18
+        }
+      ]
+    },
+    {
+      "id": "real-madrid-villarreal",
+      "title": "Real Madrid v Villarreal CF",
+      "formation": "4-4-2",
+      "reward": "Gold Pack",
+      "rules": [
+        {
+          "type": "from",
+          "op": "min",
+          "value": 2,
+          "field": "club",
+          "values": [
+            "Real Madrid",
+            "Villarreal CF"
+          ]
+        },
+        {
+          "type": "from",
+          "op": "min",
+          "value": 3,
+          "field": "league",
+          "values": [
+            "LALIGA EA SPORTS"
+          ]
+        },
+        {
+          "type": "same",
+          "op": "max",
+          "value": 4,
+          "field": "league"
+        },
+        {
+          "type": "quality_count",
+          "op": "min",
+          "value": 1,
+          "quality": "Gold"
+        },
+        {
+          "type": "quality_floor",
+          "op": "min",
+          "value": 1,
+          "quality": "Silver"
+        },
+        {
+          "type": "chemistry",
+          "op": "min",
+          "value": 22
+        }
+      ]
+    },
+    {
+      "id": "liverpool-manchester-city",
+      "title": "Liverpool v Manchester City",
+      "formation": "5-3-2",
+      "reward": "Large Electrum Players Pack",
+      "rules": [
+        {
+          "type": "from",
+          "op": "min",
+          "value": 2,
+          "field": "club",
+          "values": [
+            "Liverpool",
+            "Manchester City"
+          ]
+        },
+        {
+          "type": "from",
+          "op": "min",
+          "value": 3,
+          "field": "league",
+          "values": [
+            "Premier League"
+          ]
+        },
+        {
+          "type": "distinct",
+          "op": "min",
+          "value": 3,
+          "field": "club"
+        },
+        {
+          "type": "same",
+          "op": "max",
+          "value": 4,
+          "field": "nation"
+        },
+        {
+          "type": "rating",
+          "op": "min",
+          "value": 75
+        },
+        {
+          "type": "chemistry",
+          "op": "min",
+          "value": 26
+        }
+      ]
+    }
+  ]
+}
