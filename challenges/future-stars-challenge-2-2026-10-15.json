@@ -1,0 +1,20 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "future-stars-challenge-2-2026-10-15",
+  "title": "Future Stars Challenge 2",
+  "children": [
+    {
+      "id": "future-stars-challenge-2",
+      "title": "Future Stars Challenge 2",
+      "formation": "5-3-2",
+      "rules": [
+        { "type": "same", "field": "club", "op": "min", "value": 2 },
+        { "type": "same", "field": "league", "op": "max", "value": 4 },
+        { "type": "distinct", "field": "league", "op": "min", "value": 2 },
+        { "type": "distinct", "field": "club", "op": "min", "value": 3 },
+        { "type": "quality_floor", "quality": "Bronze", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 16 }
+      ]
+    }
+  ]
+}
