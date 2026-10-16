@@ -9,7 +9,7 @@
       "title": "Juventus FC v SS Lazio",
       "formation": "3-5-2",
       "rules": [
-        { "type": "from", "field": "club", "op": "min", "value": 1, "values": ["Juventus", "Lazio"] },
+        { "type": "from", "field": "club", "op": "min", "value": 1, "values": ["Juventus", "SS Lazio"] },
         { "type": "same", "field": "club", "op": "max", "value": 2 },
         { "type": "distinct", "field": "league", "op": "min", "value": 3 },
         { "type": "quality_count", "quality": "Gold", "op": "min", "value": 2 },
@@ -22,7 +22,7 @@
       "title": "FC Bayern München v RB Leipzig",
       "formation": "4-3-3",
       "rules": [
-        { "type": "from", "field": "club", "op": "min", "value": 1, "values": ["Bayern München", "RB Leipzig"] },
+        { "type": "from", "field": "club", "op": "min", "value": 1, "values": ["FC Bayern München", "RB Leipzig"] },
         { "type": "distinct", "field": "club", "op": "max", "value": 4 },
         { "type": "quality_count", "quality": "Silver", "op": "min", "value": 3 },
         { "type": "quality_floor", "quality": "Bronze", "op": "min", "value": 1 },
@@ -47,7 +47,7 @@
       "title": "Leeds United v Manchester United",
       "formation": "5-2-1-2",
       "rules": [
-        { "type": "from", "field": "club", "op": "min", "value": 2, "values": ["Leeds United", "Manchester United"] },
+        { "type": "from", "field": "club", "op": "min", "value": 2, "values": ["Leeds United", "Manchester Utd"] },
         { "type": "same", "field": "nation", "op": "max", "value": 3 },
         { "type": "same", "field": "club", "op": "min", "value": 4 },
         { "type": "distinct", "field": "league", "op": "min", "value": 3 },
