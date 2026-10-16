@@ -1,0 +1,59 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "marquee-matchups-2026-10-22",
+  "title": "Marquee Matchups",
+  "expiresAt": "2026-10-22T21:00:00.000Z",
+  "children": [
+    {
+      "id": "juventus-vs-lazio",
+      "title": "Juventus FC v SS Lazio",
+      "formation": "3-5-2",
+      "rules": [
+        { "type": "from", "field": "club", "op": "min", "value": 1, "values": ["Juventus", "Lazio"] },
+        { "type": "same", "field": "club", "op": "max", "value": 2 },
+        { "type": "distinct", "field": "league", "op": "min", "value": 3 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 2 },
+        { "type": "quality_floor", "quality": "Silver", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 18 }
+      ]
+    },
+    {
+      "id": "bayern-munich-vs-rb-leipzig",
+      "title": "FC Bayern München v RB Leipzig",
+      "formation": "4-3-3",
+      "rules": [
+        { "type": "from", "field": "club", "op": "min", "value": 1, "values": ["Bayern München", "RB Leipzig"] },
+        { "type": "distinct", "field": "club", "op": "max", "value": 4 },
+        { "type": "quality_count", "quality": "Silver", "op": "min", "value": 3 },
+        { "type": "quality_floor", "quality": "Bronze", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 14 }
+      ]
+    },
+    {
+      "id": "real-betis-vs-fc-barcelona",
+      "title": "Real Betis v FC Barcelona",
+      "formation": "4-1-4-1",
+      "rules": [
+        { "type": "from", "field": "club", "op": "min", "value": 2, "values": ["Real Betis", "FC Barcelona"] },
+        { "type": "same", "field": "club", "op": "min", "value": 2 },
+        { "type": "same", "field": "league", "op": "max", "value": 4 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 2 },
+        { "type": "quality_floor", "quality": "Silver", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 22 }
+      ]
+    },
+    {
+      "id": "leeds-united-vs-manchester-united",
+      "title": "Leeds United v Manchester United",
+      "formation": "5-2-1-2",
+      "rules": [
+        { "type": "from", "field": "club", "op": "min", "value": 2, "values": ["Leeds United", "Manchester United"] },
+        { "type": "same", "field": "nation", "op": "max", "value": 3 },
+        { "type": "same", "field": "club", "op": "min", "value": 4 },
+        { "type": "distinct", "field": "league", "op": "min", "value": 3 },
+        { "type": "rating", "op": "min", "value": 75 },
+        { "type": "chemistry", "op": "min", "value": 26 }
+      ]
+    }
+  ]
+}
