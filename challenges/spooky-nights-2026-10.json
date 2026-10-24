@@ -1,0 +1,26 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "spooky-nights-2026-10",
+  "title": "Spooky Nights",
+  "expiresAt": "2026-10-26T21:00:00.000Z",
+  "expiresOn": "2026-10-26",
+  "expiresEstimated": true,
+  "children": [
+    {
+      "id": "spooky-nights-challenge",
+      "title": "Spooky Nights",
+      "formation": "3-4-3",
+      "slots": 7,
+      "positions": ["GK", "CB", "CB", "CB", "CM", "CM", "ST"],
+      "lockedSlots": [4, 7, 8, 10],
+      "sourceNote": "وقت الانتهاء تقديري من ظهور «3 أيام متبقية» في لقطة 23 أكتوبر؛ راجع الوقت داخل اللعبة.",
+      "rules": [
+        { "type": "same", "field": "nation", "op": "min", "value": 3 },
+        { "type": "same", "field": "league", "op": "max", "value": 4 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 3 },
+        { "type": "quality_floor", "quality": "Bronze", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 14 }
+      ]
+    }
+  ]
+}
