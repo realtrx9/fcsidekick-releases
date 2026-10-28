@@ -1,0 +1,27 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "scary-candy-2026-10-28",
+  "title": "Scary Candy",
+  "expiresAt": "2026-10-28T17:22:08.000Z",
+  "expiresOn": "2026-10-28",
+  "expiresEstimated": true,
+  "children": [
+    {
+      "id": "scary-candy-challenge",
+      "title": "Scary Candy",
+      "formation": "4-2-3-1 (2)",
+      "slots": 6,
+      "positions": ["GK", "LB", "CB", "CB", "RB", "ST"],
+      "lockedSlots": [5, 6, 7, 8, 9],
+      "sourceNote": "وقت الانتهاء تقديري من ظهور «10 Hours» في الصورة عند إضافة التحدي يوم 28 أكتوبر 2026.",
+      "rules": [
+        { "type": "same", "field": "league", "op": "max", "value": 5 },
+        { "type": "same", "field": "club", "op": "min", "value": 2 },
+        { "type": "distinct", "field": "nation", "op": "max", "value": 4 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 5 },
+        { "type": "quality_floor", "quality": "Silver", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 16 }
+      ]
+    }
+  ]
+}
