@@ -1,0 +1,28 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "freaky-zombie-2026-10-31",
+  "title": "Freaky Zombie",
+  "expiresAt": "2026-11-06T18:00:00.000Z",
+  "expiresOn": "2026-11-06",
+  "expiresEstimated": true,
+  "children": [
+    {
+      "id": "freaky-zombie",
+      "title": "Freaky Zombie",
+      "formation": "4-2-4",
+      "slots": 7,
+      "positions": ["GK", "LB", "CB", "CB", "RB", "CM", "CM"],
+      "lockedSlots": [7, 8, 9, 10],
+      "reward": "Large Gold Pack",
+      "sourceNote": "الخانات المقفلة من صورة اللعبة؛ موعد 6 نوفمبر 18:00 UTC منشور خارجيًا وموسوم كتقديري.",
+      "rules": [
+        { "type": "same", "field": "nation", "op": "min", "value": 4 },
+        { "type": "same", "field": "league", "op": "max", "value": 5 },
+        { "type": "distinct", "field": "league", "op": "min", "value": 2 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 4 },
+        { "type": "quality_floor", "quality": "Silver", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 20 }
+      ]
+    }
+  ]
+}
