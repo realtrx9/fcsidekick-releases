@@ -1,0 +1,29 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "pumpkin-seeds-2026-11-01",
+  "title": "Pumpkin Seeds",
+  "expiresAt": "2026-11-06T18:00:00.000Z",
+  "expiresOn": "2026-11-06",
+  "expiresEstimated": true,
+  "sourceUrl": "https://futfc.gg/tonight-in-fc-27-november-1/",
+  "children": [
+    {
+      "id": "pumpkin-seeds",
+      "title": "Pumpkin Seeds",
+      "formation": "3-4-1-2",
+      "slots": 8,
+      "positions": ["CB", "LM", "CM", "CM", "RM", "CAM", "ST", "ST"],
+      "lockedSlots": [0, 1, 3],
+      "reward": "Large Gold Players Pack",
+      "sourceNote": "The in-game screenshot shows GK and the outer CB slots locked. The expiry is estimated from the four-day in-game countdown and the published November 6 date.",
+      "rules": [
+        { "type": "same", "field": "league", "op": "max", "value": 4 },
+        { "type": "same", "field": "club", "op": "min", "value": 3 },
+        { "type": "distinct", "field": "club", "op": "max", "value": 4 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 7 },
+        { "type": "rating", "op": "min", "value": 70 },
+        { "type": "chemistry", "op": "min", "value": 22 }
+      ]
+    }
+  ]
+}
