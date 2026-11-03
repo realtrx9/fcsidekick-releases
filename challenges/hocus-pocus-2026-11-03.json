@@ -1,0 +1,29 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "hocus-pocus-2026-11-03",
+  "title": "Hocus Pocus",
+  "expiresAt": "2026-11-06T18:00:00.000Z",
+  "expiresOn": "2026-11-06",
+  "expiresEstimated": true,
+  "sourceUrl": "https://www.fut.gg/sbc/challenges/27-77-hocus-pocus/",
+  "children": [
+    {
+      "id": "hocus-pocus",
+      "title": "Hocus Pocus",
+      "formation": "4-4-2",
+      "slots": 9,
+      "positions": ["GK", "LB", "CB", "CB", "RB", "LM", "CM", "CM", "RM"],
+      "lockedSlots": [9, 10],
+      "reward": "Jumbo Gold Pack",
+      "sourceNote": "The in-game screenshot shows both ST slots locked. November 6 expiry is estimated from the two-day countdown; exact time was not shown.",
+      "rules": [
+        { "type": "same", "field": "league", "op": "min", "value": 4 },
+        { "type": "same", "field": "club", "op": "max", "value": 3 },
+        { "type": "distinct", "field": "nation", "op": "max", "value": 4 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 6 },
+        { "type": "rating", "op": "min", "value": 70 },
+        { "type": "chemistry", "op": "min", "value": 24 }
+      ]
+    }
+  ]
+}
