@@ -1,0 +1,20 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "road-to-the-knockout-challenge",
+  "title": "Road to the Knockout Challenge",
+  "children": [
+    {
+      "id": "road-to-the-knockout-challenge-sbc",
+      "title": "Road to the Knockout Challenge",
+      "formation": "4-4-2",
+      "rules": [
+        { "type": "same", "field": "league", "op": "min", "value": 4 },
+        { "type": "distinct", "field": "nation", "op": "min", "value": 5 },
+        { "type": "same", "field": "club", "op": "max", "value": 6 },
+        { "type": "quality_count", "quality": "Silver", "op": "min", "value": 3 },
+        { "type": "quality_floor", "quality": "Bronze", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 14 }
+      ]
+    }
+  ]
+}
