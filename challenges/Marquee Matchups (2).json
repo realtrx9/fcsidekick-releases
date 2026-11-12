@@ -1,0 +1,58 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "marquee-matchups-2026-11-12",
+  "title": "Marquee Matchups",
+  "children": [
+    {
+      "id": "club-brugge-v-rsc-anderlecht",
+      "title": "Club Brugge v RSC Anderlecht",
+      "formation": "4-3-3",
+      "rules": [
+        { "type": "from", "field": "club", "op": "min", "value": 1, "values": ["Club Brugge", "RSC Anderlecht"] },
+        { "type": "distinct", "field": "club", "op": "max", "value": 6 },
+        { "type": "quality_count", "quality": "Silver", "op": "min", "value": 3 },
+        { "type": "quality_floor", "quality": "Bronze", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 14 }
+      ]
+    },
+    {
+      "id": "stade-rennais-fc-v-losc",
+      "title": "Stade Rennais FC v LOSC",
+      "formation": "3-5-2",
+      "rules": [
+        { "type": "from", "field": "club", "op": "min", "value": 1, "values": ["Stade Rennais FC", "LOSC Lille"] },
+        { "type": "same", "field": "club", "op": "max", "value": 2 },
+        { "type": "distinct", "field": "league", "op": "min", "value": 3 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 1 },
+        { "type": "quality_floor", "quality": "Silver", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 18 }
+      ]
+    },
+    {
+      "id": "fiorentina-v-juventus-fc",
+      "title": "Fiorentina v Juventus FC",
+      "formation": "4-1-4-1",
+      "rules": [
+        { "type": "from", "field": "club", "op": "min", "value": 2, "values": ["Fiorentina", "Juventus"] },
+        { "type": "same", "field": "club", "op": "min", "value": 2 },
+        { "type": "same", "field": "league", "op": "max", "value": 4 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 2 },
+        { "type": "quality_floor", "quality": "Silver", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 22 }
+      ]
+    },
+    {
+      "id": "atletico-de-madrid-v-fc-barcelona",
+      "title": "Atlético de Madrid v FC Barcelona",
+      "formation": "4-4-2",
+      "rules": [
+        { "type": "from", "field": "club", "op": "min", "value": 2, "values": ["Atlético de Madrid", "FC Barcelona"] },
+        { "type": "same", "field": "nation", "op": "max", "value": 3 },
+        { "type": "same", "field": "club", "op": "min", "value": 4 },
+        { "type": "distinct", "field": "league", "op": "min", "value": 3 },
+        { "type": "rating", "op": "min", "value": 75 },
+        { "type": "chemistry", "op": "min", "value": 26 }
+      ]
+    }
+  ]
+}
