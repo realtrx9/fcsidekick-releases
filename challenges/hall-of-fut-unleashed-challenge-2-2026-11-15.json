@@ -1,0 +1,19 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "hall-of-fut-unleashed-challenge-2",
+  "title": "Hall of FUT: Unleashed Challenge 2",
+  "children": [
+    {
+      "id": "hall-of-fut-unleashed-challenge-2-sbc",
+      "title": "Hall of FUT: Unleashed Challenge 2",
+      "formation": "3-5-2",
+      "rules": [
+        { "type": "same", "field": "club", "op": "min", "value": 3 },
+        { "type": "distinct", "field": "club", "op": "max", "value": 5 },
+        { "type": "quality_count", "quality": "Silver", "op": "min", "value": 10 },
+        { "type": "quality_floor", "quality": "Bronze", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 16 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "hall-of-fut-unleashed-challenge-1",
+  "title": "Hall of FUT: Unleashed Challenge 1",
+  "expiresAt": "2026-11-16T21:00:00Z",
+  "expiresEstimated": true,
+  "sourceNote": "Expiry estimated assuming 'tomorrow' means 2026-11-16 based on the current context. End of day in Riyadh is 21:00:00Z.",
+  "children": [
+    {
+      "id": "hall-of-fut-unleashed-challenge-1-sbc",
+      "title": "Hall of FUT: Unleashed Challenge 1",
+      "formation": "4-5-1",
+      "rules": [
+        { "type": "same", "field": "league", "op": "max", "value": 4 },
+        { "type": "distinct", "field": "league", "op": "min", "value": 3 },
+        { "type": "distinct", "field": "nation", "op": "max", "value": 6 },
+        { "type": "quality_count", "quality": "Silver", "op": "min", "value": 3 },
+        { "type": "quality_floor", "quality": "Bronze", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 14 }
+      ]
+    }
+  ]
+}
