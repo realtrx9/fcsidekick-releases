@@ -1,0 +1,27 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "black-friday-flash-5-2026-11-20",
+  "title": "Black Friday Flash 5",
+  "expiresAt": "2026-11-20T22:00:00.000Z",
+  "expiresOn": "2026-11-21",
+  "expiresEstimated": true,
+  "sourceUrl": "https://www.fut.gg/sbc/challenges/27-136-black-friday-flash-5/",
+  "reward": "Large Gold Pack",
+  "children": [
+    {
+      "id": "black-friday-flash-5",
+      "title": "Black Friday Flash 5",
+      "formation": "5-2-1-2",
+      "reward": "Large Gold Pack",
+      "sourceNote": "Expiry is estimated from FCData's 20 November 23:00 CET listing; check the in-game countdown.",
+      "rules": [
+        { "type": "same", "field": "league", "op": "max", "value": 4 },
+        { "type": "same", "field": "club", "op": "min", "value": 2 },
+        { "type": "distinct", "field": "nation", "op": "min", "value": 3 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 2 },
+        { "type": "quality_floor", "quality": "Silver", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 28 }
+      ]
+    }
+  ]
+}
