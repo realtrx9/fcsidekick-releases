@@ -1,0 +1,24 @@
+{
+  "format": "fcsidekick-challenge-group-v1",
+  "id": "black-friday-flash-6-2026-11-20",
+  "title": "Black Friday Flash 6",
+  "expiresAt": "2026-11-21T00:00:00.000Z",
+  "expiresOn": "2026-11-21",
+  "expiresEstimated": true,
+  "children": [
+    {
+      "id": "black-friday-flash-6",
+      "title": "Black Friday Flash 6",
+      "formation": "4-3-3",
+      "sourceNote": "Rules and formation are from the in-game screenshot. Expiry is estimated from its two-hour countdown.",
+      "rules": [
+        { "type": "same", "field": "club", "op": "min", "value": 2 },
+        { "type": "same", "field": "league", "op": "max", "value": 3 },
+        { "type": "distinct", "field": "league", "op": "min", "value": 3 },
+        { "type": "quality_count", "quality": "Gold", "op": "min", "value": 10 },
+        { "type": "quality_floor", "quality": "Silver", "op": "min", "value": 1 },
+        { "type": "chemistry", "op": "min", "value": 28 }
+      ]
+    }
+  ]
+}
